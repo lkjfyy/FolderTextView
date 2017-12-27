@@ -18,8 +18,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.fanyalianmeng.master.R;
-
 /**
  * 结尾带“查看全部”的TextView，点击可以展开文字，展开后可收起。 
  * <p/> 
@@ -28,14 +26,13 @@ import com.fanyalianmeng.master.R;
  * 可以先调用getFullText()，当已有文字和要设置的文字不一样才调用setText()，可降低抖动的次数； 
  * <p/> 
  * 通过在onMeasure()中设置高度已经修复了该问题了。 
- * <p/> 
- * Created by moxiaobo on 16/8/9. 
+ * <p/>  
  */
 
 public class FolderTextView extends TextView {
 
     // TAG  
-    private static final String TAG = "xiaobo";
+    private static final String TAG = "FolderTextView";
 
     // 默认打点文字  
     private static final String DEFAULT_ELLIPSIZE = "...";
